@@ -11,6 +11,7 @@ class WebSocket_Server:
     async def Message(self,websocket,path):
         async for message in websocket:
             print(message)
+            message = input()
             await websocket.send(message)
 
 
