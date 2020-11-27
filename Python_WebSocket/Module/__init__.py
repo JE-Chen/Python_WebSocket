@@ -1,2 +1,2 @@
-from Python_WebSocket.Module.WebSocket_Client import *
-from Python_WebSocket.Module.WebSocket_Server import *
+from ..Module.WebSocket_Client import *
+from ..Module.WebSocket_Server import *
