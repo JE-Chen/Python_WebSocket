@@ -1,4 +1,4 @@
-import Python_WebSocket
+from Python_WebSocket.Module import WebSocket_Server
 
-Server = Python_WebSocket.WebSocket_Server("localhost",5555)
+Server = WebSocket_Server("localhost",5555)
 

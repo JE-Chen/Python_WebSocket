@@ -1,3 +1,3 @@
-import Python_WebSocket
+from Python_WebSocket import WebSocket_Client
 
-Client = Python_WebSocket.WebSocket_Client('ws://localhost:5555')
+Client = WebSocket_Client('ws://localhost:5555')

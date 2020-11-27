@@ -1,1 +1,1 @@
-from .Module import *
+from Python_WebSocket.Module import *
