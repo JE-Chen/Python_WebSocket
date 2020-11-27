@@ -13,7 +13,7 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: python3 pytest ./Test/Websocket_Server_Test.py
+          command: python3 ./Test/Websocket_Server_Test.py Test
           name: Test
 
 workflows:
