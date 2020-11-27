@@ -1,7 +1,8 @@
 import asyncio
 import websockets
 
-class WebSocket_Client:
+class WebSocket_Client():
+
 
     def __init__(self,Uri):
         asyncio.get_event_loop().run_until_complete(self.Hello_Server(Uri))
