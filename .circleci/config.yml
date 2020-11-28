@@ -13,8 +13,8 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          - command: python ./JEWebSocket/Testpy/Websocket_Server_Test.py
-          - name: Test
+          command: python ./JEWebSocket/Testpy/Websocket_Server_Test.py
+          name: Test
 
 workflows:
   main:
