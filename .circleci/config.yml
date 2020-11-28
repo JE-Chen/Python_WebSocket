@@ -13,7 +13,7 @@ jobs:
       - python/save-cache
       - run:
           working_directory: ~/project/
-          command: python ./JEWebSocket/Testpy/Websocket_Server_Test.py
+          command: python JEWebSocket/Testpy/Websocket_Server_Test.py
           name: Test
 
 workflows:
