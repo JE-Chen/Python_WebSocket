@@ -6,13 +6,13 @@ orbs:
 jobs:
   build-and-test:
     executor: python/default
-
     steps:
       - checkout
       - python/load-cache
       - python/install-deps
       - python/save-cache
       - run:
+          working_directory: ~/project/
           command: python ./JEWebSocket/Testpy/Websocket_Server_Test.py
           name: Test
 
