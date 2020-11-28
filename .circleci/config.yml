@@ -13,12 +13,6 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          - name: venv Set
-              - command: |
-                  virtualenv env
-                  . env/bin/activate
-                  pip install --upgrade pip
-      - run:
           - command: python ./JEWebSocket/Testpy/Websocket_Server_Test.py
           - name: Test
 
