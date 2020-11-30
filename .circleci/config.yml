@@ -8,7 +8,6 @@ jobs:
     executor: python/default
     steps:
       - checkout
-      - python/install-deps
       - run:
           command: python JEWebSocket/Testpy/Websocket_Server_Test.py
           name: Test
