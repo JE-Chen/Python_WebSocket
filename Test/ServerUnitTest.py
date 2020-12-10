@@ -1,5 +1,9 @@
+import sys
+import time
 import unittest
+
 import JEWebSocket
+
 
 class TestServer(unittest.TestCase):
 
@@ -10,5 +14,6 @@ class TestServer(unittest.TestCase):
         pass
 
     def testServer(self):
-        websocket = JEWebSocket.Module.WebsocketServer.WebsocketServer("localhost", 5555)
-
+        websocket = JEWebSocket.WebsocketServer("localhost", 5555)
+        time.sleep(3)
+        sys.exit()
