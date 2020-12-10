@@ -1,20 +1,26 @@
 version: 2.1
 
 orbs:
-  python: circleci/python@0.2.1
+  python: circleci/python@1.2.1
 
 jobs:
   build-and-test:
     executor: python/default
-
     steps:
       - checkout
-      - python/load-cache
-      - python/install-deps
-      - python/save-cache
       - run:
-          command: python3 ./Test/Websocket_Server_Test.py Test
-          name: Test
+          command: pip install --user websockets
+          name: pip websockets
+      - run:
+          command: pip install --user JEWebSocket
+          name: pip JEWebSocket
+      - run:
+          command: python Test/ServerUnitTest.py
+          name: ServerUnitTest
+      - run:
+          command: python Test/ClientUnitTest.py
+          name: ClientUnitTest
+
 
 workflows:
   main:

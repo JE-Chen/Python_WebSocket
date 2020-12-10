@@ -1,4 +1,3 @@
-from Python_WebSocket import WebSocket_Server
+import JEWebSocket
 
-Server = WebSocket_Server("localhost", 5555)
-
+websocket = JEWebSocket.WebsocketServer("127.0.0.1", 5555)
