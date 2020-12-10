@@ -1,3 +1,3 @@
 import JEWebSocket
 
-websocket = JEWebSocket.WebsocketServer.WebsocketServer("localhost", 5555)
+websocket = JEWebSocket.Module.WebsocketServer.WebsocketServer("localhost", 5555)
