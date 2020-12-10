@@ -1,1 +1,2 @@
-from JEWebSocket import *
+from JEWebSocket import WebsocketServer
+from JEWebSocket import WebsocketClient
