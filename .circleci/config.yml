@@ -9,8 +9,20 @@ jobs:
     steps:
       - checkout
       - run:
-          command: python JEWebSocket/Testpy/Websocket_Server_Test.py
-          name: Test
+          command: pip install --user websockets
+          name: pip websockets
+      - run:
+          command: python Test/Websocket_Server_Test.py
+          name: Websocket_Server_Test
+      - run:
+          command: python Test/Websocket_Client_Test.py
+          name: Websocket_Client_Test
+      - run:
+          command: python Test/ClientUnitTest.py
+          name: ClientUnitTest
+      - run:
+          command: python Test/ServerUnitTest.py
+          name: ServerUnitTest
 
 workflows:
   main:
