@@ -12,6 +12,9 @@ jobs:
           command: pip install --user websockets
           name: pip websockets
       - run:
+          command: pip install --user JEWebSocket
+          name: pip JEWebSocket
+      - run:
           command: python Test/Websocket_Server_Test.py
           name: Websocket_Server_Test
       - run:
