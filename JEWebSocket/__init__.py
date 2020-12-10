@@ -1,1 +1,1 @@
-from JEWebSocket import Module
+from JEWebSocket.Module import *
