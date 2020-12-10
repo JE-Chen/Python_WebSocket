@@ -15,11 +15,12 @@ jobs:
           command: pip install --user JEWebSocket
           name: pip JEWebSocket
       - run:
-          command: python Test/ClientUnitTest.py
-          name: ClientUnitTest
-      - run:
           command: python Test/ServerUnitTest.py
           name: ServerUnitTest
+      - run:
+          command: python Test/ClientUnitTest.py
+          name: ClientUnitTest
+
 
 workflows:
   main:
