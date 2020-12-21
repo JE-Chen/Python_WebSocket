@@ -11,6 +11,5 @@ class WebsocketClient:
     @staticmethod
     async def connect_to_server_receive_forever(uri):
         async with websockets.connect(uri) as websocket:
-            await websocket.send("Hello Server")
-            while True:
-                print(await websocket.recv())
+            await websocket.send("exit")
+            print(await websocket.recv())

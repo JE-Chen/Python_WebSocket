@@ -1,4 +1,5 @@
 import asyncio
+import sys
 
 import websockets
 
@@ -38,4 +39,9 @@ class WebsocketServer:
     async def message(websocket, path):
         async for message in websocket:
             print("Command : " + message)
-            await websocket.send("Hello Client")
+            if message == 'Hello':
+                await websocket.send("Hello Client")
+            elif message == 'exit':
+                await websocket.send("Server close connection")
+                await websocket.close()
+
